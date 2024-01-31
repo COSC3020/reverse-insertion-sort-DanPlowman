@@ -37,3 +37,5 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+The worst-case time complexity of Insertion sort is n^2, this occurs when every element is in reverse order and the maximum number of swaps need to be made. For the average case, we could reason that the inner loop doing the swaps is not going to have to return through the entire array every time. But it will still need to do some work. So this has more than n complexity, because the middle loop executes more than once, but less than the worst case complexity of n^2. this n^2 complexity could be reduced by a coefficient that represents probabilities of numbers needing to be swapped, but for asymptotic time complexities these coefficients should be excluded, so the average time complexity must be n^2 as well.
